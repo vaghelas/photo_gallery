@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script src="jquerymin.js" language="javascript" type="text/javascript">
+</script>
+<script>
+$(document).ready(function(){
+$('p').click(function(){
+$('#testdiv').toggle('slow');
+});
+});
+</script>
+
+
+<link rel="stylesheet" href="bjqs.css">
+<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Open+Sans:300' rel='stylesheet' type='text/css'> 
+
+<link rel="stylesheet" href="demo.css">
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="js/bjqs-1.3.min.js"></script>
+</head>
+
+<body>
+<p style="cursor:pointer;color:#FF0000;">
+Read More>>
+</p>
+<span id="testdiv">
+This is test div to define jquery
+This is test div to define jquery
+This is test div to define jquery
+This is test div to define jquery
+This is test div to define jquery
+This is test div to define jquery
+This is test div to define jquery
+</span>
+
+<div id="container">
+  
+      <h2>Fade Example</h2>
+
+      <!--  Outer wrapper for presentation only, this can be anything you like -->
+      <div id="banner-fade">
+
+        <!-- start Basic Jquery Slider -->
+        <ul class="bjqs">
+          <li><img src="img/banner01.jpg" title="Automatically generated caption"></li>
+          <li><img src="img/banner02.jpg" title="Automatically generated caption"></li>
+          <li><img src="img/banner03.jpg" title="Automatically generated caption"></li>
+        </ul>
+        <!-- end Basic jQuery Slider -->
+
+      </div>
+      <!-- End outer wrapper -->
+
+      <script class="secret-source">
+        jQuery(document).ready(function($) {
+
+          $('#banner-fade').bjqs({
+            height      : 320,
+            width       : 620,
+            responsive  : true
+          });
+
+        });
+      </script>
+
+      <h2>Slide Example</h2>
+
+      <!--  Outer wrapper for presentation only, this can be anything you like -->
+      <div id="banner-slide">
+
+        <!-- start Basic Jquery Slider -->
+        <ul class="bjqs">
+          <li><a href=""><img src="img/images.jpeg" title="Automatically generated caption"></a></li>
+          <li><img src="img/images2.jpeg" title="Automatically generated caption"></li>
+          <li><img src="img/iphone5.jpeg" title="Automatically generated caption"></li>
+        </ul>
+        <!-- end Basic jQuery Slider -->
+
+      </div>
+      <!-- End outer wrapper -->
+      
+      <!-- attach the plug-in to the slider parent element and adjust the settings as required -->
+      <script class="secret-source">
+        jQuery(document).ready(function($) {
+          
+          $('#banner-slide').bjqs({
+            animtype      : 'slide',
+            height        : 320,
+            width         : 620,
+            responsive    : true,
+            randomstart   : true
+          });
+          
+        });
+      </script>
+      </div>
+
+
+
+</body>
+</html>
